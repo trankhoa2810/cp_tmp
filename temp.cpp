@@ -80,7 +80,7 @@ typedef pair<int, int> ii;
 const int INF = 1 << 29;
 const int MOD = 1e9 + 7;
 
-int add(int x, int y)
+ll add(ll x, ll y)
 {
     x += y;
     while(x >= MOD) x -= MOD;
@@ -88,14 +88,14 @@ int add(int x, int y)
     return x;
 }
 
-int mul(int x, int y)
+ll mul(ll x, ll y)
 {
     return (x * 1ll * y) % MOD;
 }
 
-int binpow(int x, int y)
+ll binpow(ll x, ll y)
 {
-    int z = 1;
+    ll z = 1;
     while(y)
     {
         if(y & 1) z = mul(z, x);
@@ -105,12 +105,12 @@ int binpow(int x, int y)
     return z;
 }
 
-int inv(int x)
+ll inv(ll x)
 {
     return binpow(x, MOD - 2);
 }
 
-int divide(int x, int y)
+ll divide(ll x, ll y)
 {
     return mul(x, inv(y));
 }
@@ -120,7 +120,5 @@ void solve() {
 }
 
 int main() {
-	IOS
-  solve();
 	return 0;
 }
