@@ -62,6 +62,7 @@ int main() {
 		for(int j = 0; j < n; j++) {
 			if(i == j) continue;
 			if(a[j].F == B) {
+				cnt++;
 				int C = a[j].S;				
 				if(has[A][C]) {
 					continue;
@@ -69,6 +70,9 @@ int main() {
 					printf("Khong thoa: d. Quan he bac cau;\n");
 					break;
 				}
+			} else {
+				printf("Khong thoa: d. Quan he bac cau;\n");
+				break;
 			}
 		}
 		if(cnt == 0) {
