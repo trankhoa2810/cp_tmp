@@ -27,7 +27,7 @@ int main() {
 	/* a.Phan hoi */
 	for(int i = 1; i <= m; i++) {
 		if(has[i][i] != 1) {
-			printf("Khong thoa: a. Phan doi;\n");
+			printf("Khong thoa: a. Phan hoi;\n");
 			break;
 		}
 	}
